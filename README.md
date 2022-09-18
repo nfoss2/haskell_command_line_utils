@@ -1,12 +1,21 @@
 # Functional Programming Midterm
 
-For this midterm, you will be implementing a number of common command line
-utilities as Haskell programs. Look in the `midterm.cabal` file for the list of
-programs you will be writing. They are listed in order of increasingly
-complexity, so it is recommended to implement the programs in the order they are
-listed. Start with `echo`, then `cat`, then `head`, etc.
+This project implements a number of common command line utilities as Haskell programs.
 
-## Grading
+## Run Instructions
+
+- Open the project in the docker container (created by professor)
+- Run `cabal build`
+- Run `cabal -v0 run` <whichever command util> <arguments>
+
+Examples:
+
+- `cabal -v0 run cat test/lorem.txt`
+- `cabal -v0 run echo Natalie is the best`
+- `cabal -v0 run rev test/haiku.txt`
+
+
+## How this midterm was graded
 
 This repository has a number of automated tests that will run every time you
 push your code. Each test has a number of points associated with it. Passing all
@@ -25,18 +34,3 @@ be frozen and graded as is.
 
 You can test your code locally by running the exact commands ran in the tests
 (found in the `.github/classroom/autograding.json` file).
-
-## Rules
-
-This midterm is a solo programming project. By solo, I mean you must limit your
-collaboration with others taking this midterm to discussion only. Do not review
-or compare each others' code under any circumstances without the instructor's
-permission. Do not publish the code you write anywhere besides this private
-repository until the assignment deadline has passed.
-
-Other than those restricted by the guidelines above, you are free to use any
-resource at all. The instructor, internet, textbooks, open-source repositories,
-etc. are all fair game and you are encouraged to use them.
-
-In completing this assignment, you should only edit the `Main.hs` files included
-in each of the directories. Everything else should remain unchanged.
